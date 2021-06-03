@@ -3,24 +3,29 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Vungo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>VUNGO</title>
     <base href="//d2j47pfrpdbrfs.cloudfront.net/static/">
     <link href="./css/style-m-20201107.css" rel="stylesheet">
     <link rel="canonical" href="https://www.vungo.in" />
+    <script>
+        document.addEventListener('DOMContentLoaded', function (e) {
+            document.getElementsByTagName('html')[0].style.fontSize = document.body.clientWidth / 10 + 'px';
+        }, false);
+    </script>
 </head>
 
 <body>
     <div class="container">
         <div class="icons">
             <img class="icon" src="./images/icon-c.png">
-            <img class="download download-btn" src="./images/download-btn-pc.png">
         </div>
-        <div class="wrap" style="left: -100vw;">
-            <img src="./images/banner-4.jpg" alt="">
-            <img src="./images/banner-2.jpg" alt="">
-            <img src="./images/banner-3.jpg" alt="">
-            <img src="./images/banner-4.jpg" alt="">
-            <img src="./images/banner-2.jpg" alt="">
+        <div class="wrap" style="left: -10rem;">
+            <img src="./images/banner-m-4.jpg" alt="">
+            <img src="./images/banner-m-2.jpg" alt="">
+            <img src="./images/banner-m-3.jpg" alt="">
+            <img src="./images/banner-m-4.jpg" alt="">
+            <img src="./images/banner-m-2.jpg" alt="">
         </div>
         <div class="buttons">
             <span class="dot on"></span>
@@ -29,15 +34,8 @@
         </div>
     </div>
 
-    <div class="fd">
-        <img class="fd-icon" src="./images/icon.png">
-        <div class="fd-text">Teen Patti Vungo</div>
-        <div class="fd-btn download-btn">DOWNLOAD APP</div>
-    </div>
-
     <div class="detail-wrapper">
-        <div class="detail-top">
-            <div class="title">Vungo's Online Game</div>
+        <div class="detail-top" id="detail-top">
             <div class="btns" id="detail-btns">
                 <div class="btn selected" select-index="0">Rummy</div>
                 <div class="btn" select-index="1">Teen Patti</div>
@@ -49,11 +47,12 @@
         <div class="contents" id="detail-contents">
             <div class="content selected">
                 <div class="content-intro">
-                    <img class="content-intro-left" src="./images/intro-rummy-1.png">
                     <div class="content-intro-right">
                         <div class="intro-title">
                             <div class="intro-title-text">Rummy</div>
                         </div>
+                        <img class="content-intro-left" src="./images/intro-rummy-1.png">
+
                         <div class="intro-texts">
                             <p class="intro-text">
                                 Rummy Vungo is the most enjoyable Indian Rummy Card Game which is considered as an extension of Gin Rummy and rami . You can play our online circle rummy live with real & worldwide players in a strong Social Indian Rummy Function. Invite and challenge your Facebook friends to join our rummy free game.
@@ -71,146 +70,74 @@
                     </div>
                     <div class="content-detail-para">
                         <div class="content-detail-para-title"><div class="content-detail-para-title-dot"></div>GOAL</div>
-                        <div class="content-detail-para-full">1. A player's objective is to make the best combinations of cards in the form of sets or sequences. To win, one needs to declare first and then meld the cards in hand correctly as per the rules of the Rummy game.</div>
-                        <div class="content-detail-para-full">2. Game is played with two decks of cards consisting of 52 cards and 2 face Jokers each.</div>
+                        <div class="content-detail-para-text">1. A player's objective is to make the best combinations of cards in the form of sets or sequences. To win, one needs to declare first and then meld the cards in hand correctly as per the rules of the Rummy game.</div>
+                        <div class="content-detail-para-text">2. Game is played with two decks of cards consisting of 52 cards and 2 face Jokers each.</div>
                     </div>
                     <div class="content-detail-para">
                         <div class="content-detail-para-title"><div class="content-detail-para-title-dot"></div>JOKERS</div>
-                        <div class="content-detail-para-full">
-                            <div class="content-detail-para-half content-detail-para-half-left">
-                                <img class="content-detail-para-img" src="./images/intro-rummy-detail-1.png">
-                            </div>
-                        </div>
-                        <div class="content-detail-para-full">
-                            <div class="content-detail-para-text">
-                                All cards with the same rank as the card below the closed deck are considered jokers. A joker functions as a substitute to any card.
-                            </div>
+                        <img class="content-detail-para-img" src="./images/intro-rummy-detail-1.png">
+                        <div class="content-detail-para-text">
+                            All cards with the same rank as the card below the closed deck are considered jokers. A joker functions as a substitute to any card.
                         </div>
                     </div>
                     <div class="content-detail-para">
                         <div class="content-detail-para-title"><div class="content-detail-para-title-dot"></div>SEQUENCES</div>
-                        <div class="content-detail-para-full">
-                            <div class="content-detail-para-half content-detail-para-half-left">
-                                <img class="content-detail-para-img" src="./images/intro-rummy-detail-2.png">
-                            </div>
+                        <img class="content-detail-para-img" src="./images/intro-rummy-detail-2.png">
+
+                        <div class="content-detail-para-text">
+                            A sequence consists of three or more cards of the same suit in order.
                         </div>
-                        <div class="content-detail-para-full">
-                            <div class="content-detail-para-half content-detail-para-half-left">
-                                <div class="content-detail-para-text">
-                                    A sequence consists of three or more cards of the same suit in order.
-                                </div>
-                            </div>
-                            <div class="content-detail-para-half content-detail-para-half-left">
-                                <div class="content-detail-para-text">
-                                    A PURE SEQUENCE is a sequence without jokers.
-                                </div>
-                            </div>
+                        <div class="content-detail-para-text">
+                            A PURE SEQUENCE is a sequence without jokers.
                         </div>
-                        <div class="content-detail-para-full">
-                            <div class="content-detail-para-text">
-                                IMPURE SEQUENCES are sequences that can contain jokers
-                            </div>
+                        <div class="content-detail-para-text">
+                            IMPURE SEQUENCES are sequences that can contain jokers
                         </div>
-                        <div class="content-detail-para-full">
-                            <div class="content-detail-para-text content-detail-para-notice">
-                                NOTE: IMPURE SEQUENCE is not valid until you have a PURE SEQUENCE
-                            </div>
+                        <div class="content-detail-para-text" style="color: #34206D">
+                            NOTE: IMPURE SEQUENCE is not valid until you have a PURE SEQUENCE
                         </div>
+
                     </div>
                     <div class="content-detail-para">
                         <div class="content-detail-para-title"><div class="content-detail-para-title-dot"></div>SETS</div>
-                        <div class="content-detail-para-full">
-                            <div class="content-detail-para-half content-detail-para-half-left">
-                                <img class="content-detail-para-img" src="./images/intro-rummy-detail-3.png">
-                            </div>
+                        <img class="content-detail-para-img" src="./images/intro-rummy-detail-3.png">
+                        <div class="content-detail-para-text">
+                            Sets are a group of 3 or 4 cards with the same rank but different suits.
                         </div>
-                        <div class="content-detail-para-full">
-                            <div class="content-detail-para-half content-detail-para-half-left">
-                                <div class="content-detail-para-text">
-                                    Sets are a group of 3 or 4 cards with the same rank but different suits.
-                                </div>
-                            </div>
-                            <div class="content-detail-para-half content-detail-para-half-right">
-                                <div class="content-detail-para-text">
-                                    Sets can contain Jokers.
-                                </div>
-                            </div>
+                        <div class="content-detail-para-text">
+                            Sets can contain Jokers.
                         </div>
-                        <div class="content-detail-para-full">
-                            <div class="content-detail-para-text content-detail-para-notice">
-                                NOTE: Sets are not valid until you have a PURE SEQUENCE and an IMPURE SEQUENCE
-                            </div>
+                        <div class="content-detail-para-text" style="color: #34206D">
+                            NOTE: Sets are not valid until you have a PURE SEQUENCE and an IMPURE SEQUENCE
                         </div>
                     </div>
                     <div class="content-detail-para">
                         <div class="content-detail-para-title"><div class="content-detail-para-title-dot"></div>FINISH</div>
-                        <div class="content-detail-para-full">
-                            <div class="content-detail-para-text">
-                                To win game the player must call for a Finish with the following
-                            </div>
-                        </div>
-                        <div class="content-detail-para-full">
-                            <div class="content-detail-para-half content-detail-para-half-left">
-                                <img class="content-detail-para-img" src="./images/intro-rummy-detail-4.png">
-                            </div>
-                            <div class="content-detail-para-half content-detail-para-half-right">
-                                <img class="content-detail-para-img" src="./images/intro-rummy-detail-5.png">
-                            </div>
-                        </div>
-                        <div class="content-detail-para-full">
-                            <div class="content-detail-para-half content-detail-para-half-left">
-                                <div class="content-detail-para-text">
-                                    1st life:pure Squence-no Jokers
-                                </div>
-                            </div>
-                            <div class="content-detail-para-half content-detail-para-half-right">
-                                <div class="content-detail-para-text">
-                                    2nd life: 2nd Squence - Pure or Impure
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content-detail-para-full">
-                            <div class="content-detail-para-text content-detail-para-notice">
-                                Score: All 13 cards part of a valid Squence or Set
-                            </div>
-                        </div>
+                        <div class="content-detail-para-text">To win game the player must call for a Finish with the following</div>
+                        <img class="content-detail-para-img" src="./images/intro-rummy-detail-4.png">
+                        <div class="content-detail-para-text" style="margin-bottom: 0.32rem;">1st life:pure Squence-no Jokers</div>
+                        <img class="content-detail-para-img" src="./images/intro-rummy-detail-5.png">
+                        <div class="content-detail-para-text" style="margin-bottom: 0.32rem;">2nd life: 2nd Squence - Pure or Impure</div>
+                        <div class="content-detail-para-text" style="color: #34206D">Score: All 13 cards part of a valid Squence or Set</div>
                     </div>
                     <div class="content-detail-para">
                         <div class="content-detail-para-title"><div class="content-detail-para-title-dot"></div>SCORE</div>
-                        <div class="content-detail-para-full">
-                            <div class="content-detail-para-text">
-                                The players score is the total value of all the cards and that are not a part of a valid sequence or a set.
-                            </div>
+                        <div class="content-detail-para-text">
+                            The players score is the total value of all the cards and that are not a part of a valid sequence or a set.
                         </div>
-                        <div class="content-detail-para-full">
-                            <div class="content-detail-para-text">
-                                The objective is to reduce your score to 0 by forming valid sequences and sets
-                            </div>
+                        <div class="content-detail-para-text">
+                            The objective is to reduce your score to 0 by forming valid sequences and sets
                         </div>
-                        <div class="content-detail-para-full">
-                            <div class="content-detail-para-half content-detail-para-half-left">
-                                <img class="content-detail-para-img" src="./images/intro-rummy-detail-6.png">
-                            </div>
-                            <div class="content-detail-para-half content-detail-para-half-right">
-                                <img class="content-detail-para-img" src="./images/intro-rummy-detail-7.png">
-                            </div>
+                        <img class="content-detail-para-img" src="./images/intro-rummy-detail-6.png">
+                        <div class="content-detail-para-text" style="margin-bottom: 0.32rem;">
+                            J, Q, K and A have a value of 10<br />The values of the rest of the card are equal to their rank
                         </div>
-                        <div class="content-detail-para-full">
-                            <div class="content-detail-para-half content-detail-para-half-left">
-                                <div class="content-detail-para-text">
-                                    J, Q, K and A have a value of 10<br/>The values of the rest of the card are equal to their rank
-                                </div>
-                            </div>
-                            <div class="content-detail-para-half content-detail-para-half-right">
-                                <div class="content-detail-para-text">
-                                    SCORE: Total value of cards that are not a part of a valid Set or a Sequence.
-                                </div>
-                            </div>
+                        <img class="content-detail-para-img" src="./images/intro-rummy-detail-7.png">
+                        <div class="content-detail-para-text" style="margin-bottom: 0.32rem;">
+                            SCORE: Total value of cards that are not a part of a valid Set or a Sequence.
                         </div>
-                        <div class="content-detail-para-full">
-                            <div class="content-detail-para-text content-detail-para-notice">
-                                REMEMBER: Lower Score is always better
-                            </div>
+                        <div class="content-detail-para-text" style="color: #34206D">
+                            REMEMBER: Lower Score is always better
                         </div>
                     </div>
 
@@ -218,16 +145,16 @@
             </div>
             <div class="content">
                 <div class="content-intro">
-                    <img class="content-intro-left" src="./images/intro-tp-1.png">
                     <div class="content-intro-right">
                         <div class="intro-title">
                             <div class="intro-title-text">Teen Patti</div>
                         </div>
+                        <img class="content-intro-left" src="./images/intro-tp-1.png">
+
                         <div class="intro-texts">
                             <p class="intro-text">
                                 Teen patti/ 3 patti, a 3 card game also known as indian poker ,indian holdem poker,flash or flush ,three card brag,largest multiplayer online card game in the world.
                             </p>
-                            <br/>
                             <p class="intro-text">
                                 World's Popular MULTIPLAYER Card Game Teen patti Vungo & Get upto Ten Lakh Free CHIPS! Get Highest Daily Bonuses.
                             </p>
@@ -280,16 +207,16 @@
             </div>
             <div class="content">
                 <div class="content-intro">
-                    <img class="content-intro-left" src="./images/intro-ab-1.png">
                     <div class="content-intro-right">
                         <div class="intro-title">
                             <div class="intro-title-text">Andar Bahar</div>
                         </div>
+                        <img class="content-intro-left" src="./images/intro-ab-1.png">
                         <div class="intro-texts">
                             <p class="intro-text">
-                            Andar Bahar is a traditional Indian betting game which originated in Bangalore many centuries ago.<br/>
-                            Game Play:<br/>
-                            It is a very simple 50/50 game that involves the use of a single pack of cards.The dealer deals a single card face up into the middle of the table and then proceeds to deal face up cards to Andar and Bahar section. When a card appears that matches the value of the middle card then the game ends.Before the start of the game, players bet on which side they think the game will end on.
+                                Andar Bahar is a traditional Indian betting game which originated in Bangalore many centuries ago.<br />
+                                Game Play:<br />
+                                It is a very simple 50/50 game that involves the use of a single pack of cards.The dealer deals a single card face up into the middle of the table and then proceeds to deal face up cards to Andar and Bahar section. When a card appears that matches the value of the middle card then the game ends.Before the start of the game, players bet on which side they think the game will end on.
                             </p>
                         </div>
                         <div class="intro-icons">
@@ -303,26 +230,26 @@
                         <div class="content-detail-title-text">How to Play Andar Bahar</div>
                     </div>
                     <div class="content-detail-tips">
-                        <div class="content-detail-tip content-detail-tip-ab">
+                        <div class="content-detail-tip">
                             <img class="content-detail-tip-img" src="./images/intro-ab-detail-1.png">
-                            <div class="content-detail-tip-title">The dealer puts a card in the center of the table.This is the joker card.</div>
+                            <div class="content-detail-tip-title" style="margin: 0 0 0.12rem;">The dealer puts a card in the center of the table.This is the joker card.</div>
                         </div>
-                        <div class="content-detail-tip content-detail-tip-ab">
+                        <div class="content-detail-tip" style="margin-top: 0.32rem">
                             <img class="content-detail-tip-img" src="./images/intro-ab-detail-2.png">
-                            <div class="content-detail-tip-title">Players bet on which side a card of Joker's rank will drop, Andar or Bahar</div>
+                            <div class="content-detail-tip-title" style="margin: 0 0 0.12rem;">Players bet on which side a card of Joker’s rank will drop, Andar or Bahar</div>
                         </div>
-                        <div class="content-detail-tip content-detail-tip-ab">
+                        <div class="content-detail-tip" style="margin-top: 0.32rem">
                             <img class="content-detail-tip-img" src="./images/intro-ab-detail-3.png">
-                            <div class="content-detail-tip-title">You bet twice. The first bet happens after the Joker card appears.</div>
+                            <div class="content-detail-tip-title" style="margin: 0 0 0.12rem;">You bet twice. The first bet happens after the Joker card appears.</div>
                         </div>
-                        <div class="content-detail-tip content-detail-tip-ab">
+                        <div class="content-detail-tip" style="margin-top: 0.32rem">
                             <img class="content-detail-tip-img" src="./images/intro-ab-detail-4.png">
-                            <div class="content-detail-tip-title">Second bet happens after two cards have been dealt to the table.</div>
+                            <div class="content-detail-tip-title" style="margin: 0 0 0.12rem;">Second bet happens after two cards have been dealt to the table.</div>
                         </div>
-                        <div class="content-detail-tip content-detail-tip-ab">
+                        <div class="content-detail-tip" style="margin-top: 0.32rem">
                             <img class="content-detail-tip-img" src="./images/intro-ab-detail-5.png">
-                            <div class="content-detail-tip-title">The game ends when a card of the same rank as the Joker lands on andar
-                            or Bahar.</div>
+                            <div class="content-detail-tip-title" style="margin: 0 0 0.12rem;">The game ends when a card of the same rank as the Joker lands on andar
+                                or Bahar.</div>
                         </div>
                     </div>
                     <div class="content-detail-texts"></div>
@@ -330,11 +257,11 @@
             </div>
             <div class="content">
                 <div class="content-intro">
-                    <img class="content-intro-left" src="./images/intro-7ud-1.png">
                     <div class="content-intro-right">
                         <div class="intro-title">
                             <div class="intro-title-text">7 Up Down</div>
                         </div>
+                        <img class="content-intro-left" src="./images/intro-7ud-1.png">
                         <div class="intro-texts">
                             <p class="intro-text">
                                 This is a dice game where the host throws the dice and the players bet on 3 numbers - numbers below 7, 7 and numbers above 7. On numbers below and above 7 the players get double their stake and on 7 the players get 5 times their stake.
@@ -353,7 +280,7 @@
                     <div class="content-detail-tips-7ud">
                         <div class="content-detail-tip-7ud">
                             <div class="content-detail-tip-7ud-title">
-                                7 UP 7 DOWN is a simple dice game. <br/>Two 6 sided dice are rolled and the results are totalled up.
+                                7 UP 7 DOWN is a simple dice game. <br />Two 6 sided dice are rolled and the results are totalled up.
                             </div>
                             <div class="content-detail-tip-7ud-imgs">
                                 <div class="content-detail-tip-7ud-img">
@@ -370,7 +297,7 @@
                                 </div>
                             </div>
                             <div class="content-detail-tip-7ud-desc">
-                                1.You can bet on the total beiing under 7,exactly 7 , or over 7.<br/>
+                                1.You can bet on the total beiing under 7,exactly 7 , or over 7.<br />
                                 2.Above and below 7 gives payout double the bet amount.<br />
                                 3.Exactly 7 gives payout 5 times the bet amount.
                             </div>
@@ -393,14 +320,14 @@
             </div>
             <div class="content">
                 <div class="content-intro">
-                    <img class="content-intro-left" src="./images/intro-ib-1.png">
                     <div class="content-intro-right">
                         <div class="intro-title">
                             <div class="intro-title-text">In Between</div>
                         </div>
+                        <img class="content-intro-left" src="./images/intro-ib-1.png">
                         <div class="intro-texts">
                             <p class="intro-text">
-                                In Between is a simple 3 card game played with a single deck. You are initially dealt 2 cards. If the 3rd card dealt to you falls in-between the 2 dealt cards – you win! Special in-game teen patti jackpots make In-Between a one-of-a-kind Indian casino game! <br/>
+                                In Between is a simple 3 card game played with a single deck. You are initially dealt 2 cards. If the 3rd card dealt to you falls in-between the 2 dealt cards – you win! Special in-game teen patti jackpots make In-Between a one-of-a-kind Indian casino game! <br />
                                 Download it! experience and play with free virtual money against players across the world! Download and enjoy In-Between for FREE!
                             </p>
                         </div>
@@ -418,33 +345,21 @@
                         <div class="content-detail-para-text">Each player places the ants in the pot. During the game each player takes turns, the game continues until there is no money left in the pot.</div>
                         <div class="content-detail-para-text"><br /></div>
                         <div class="content-detail-para-text">During a turn, the dealer deals two cards, face-up. The player then decides to bet if they believe the third card dealt will be in between (in rank)their two cards. A bet can be between zero or the total value of the pot.</div>
-                        <div class="content-detail-para-text"><br /></div>
+                        <div class="content-detail-para-text"><br/></div>
                         <div class="content-detail-para-text">If the third cars is in-between, that player wins their bet from the pot. If the third card is not in-between the two, that player pays to the pot their bet. <br />If the third card is the same rank as one of the two, they pay to the pot double their bet.</div>
                     </div>
                     <div class="content-detail-para">
-                        <div class="content-detail-para-full">
-                            <div class="content-detail-para-half content-detail-para-half-left">
-                                <img class="content-detail-para-img" src="./images/intro-ib-detail-1.png">
-                            </div>
-                            <div class="content-detail-para-half content-detail-para-half-right">
-                                <img class="content-detail-para-img" src="./images/intro-ib-detail-2.png">
-                            </div>
+                        <img class="content-detail-para-img" src="./images/intro-ib-detail-1.png">
+                        <div class="content-detail-para-text content-detail-para-text-columns">
+                            <div class="content-detail-para-text-column">The Third Card:</div>
+                            <div class="content-detail-para-text-column">The Third Card:</div>
+                            <div class="content-detail-para-text-column">The Third Card:</div>
                         </div>
-                        <div class="content-detail-para-full">
-                            <div class="content-detail-para-half content-detail-para-half-left">
-                                <div class="content-detail-para-text content-detail-para-text-columns">
-                                    <div class="content-detail-para-text-column">The Third Card:</div>
-                                    <div class="content-detail-para-text-column">The Third Card:</div>
-                                    <div class="content-detail-para-text-column">The Third Card:</div>
-                                </div>
-                            </div>
-                            <div class="content-detail-para-half content-detail-para-half-right">
-                                <div class="content-detail-para-text content-detail-para-text-columns">
-                                    <div class="content-detail-para-text-column" style="color: #EC8500">Win bet*1</div>
-                                    <div class="content-detail-para-text-column" style="color: #249D20">Lose bet*1</div>
-                                    <div class="content-detail-para-text-column" style="color: #249D20">Lose bet*2</div>
-                                </div>
-                            </div>
+                        <img class="content-detail-para-img" src="./images/intro-ib-detail-1.png">
+                        <div class="content-detail-para-text content-detail-para-text-columns">
+                            <div class="content-detail-para-text-column" style="color: #EC8500">Win bet*1</div>
+                            <div class="content-detail-para-text-column" style="color: #249d20">Lose bet*1</div>
+                            <div class="content-detail-para-text-column" style="color: #249d20">Lose bet*2</div>
                         </div>
                     </div>
 
@@ -454,28 +369,86 @@
     </div>
 
     <div class="footer">
-        <div class="footer-btns">
-            <img class="footer-icon" src="./images/icon-g.png">
-            <div class="footer-split"></div>
-            <div class="footer-btn download-btn">DOWNLOAD APP</div>
-        </div>
         <div class="footer-text">
-            <p>* You must be 18 years or older to play real money rummy</p>
-            <p>* This is an indicative amount only and this includes promotional tournaments and bonuses.</p>
-            <p>Actual amount may differ and would depend on the total number of cash tournaments played on the Website and bonuses claimed</p>
-            <p>by players in a calendar month. Individual winnings depend on your skill and the number of cash tournaments you play in a calendar month.</p>
+            <p class="footer-text-para">*You must be 18 years or older to play real money rummy</p>
+            <p class="footer-text-para">* This is an indicative amount only and this includes promotional tournaments and bonuses.</pclass="footer-text-para">
+            <p class="footer-text-para">Actual amount may differ and would depend on the total number of cash tournaments played on the Website and bonuses claimed by players in a calendar month. Individual winnings depend on your skill and the number of cash tournaments you play in a calendar month.</pclass="footer-text-para">
         </div>
     </div>
 
-    <script>
-        // var apkUrl = "//d3f6c6b0qerxuo.cloudfront.net/temp/com.rummy.game.pro896.mkswo45m/Vungo-TeenPatti_6wsyl.apk";
-        var apkUrl = "//d3f6c6b0qerxuo.cloudfront.net/temp/com.rummy.game.pro896.mkswo45m/Vungo-TeenPatti_6wsyl.apk";
+    <div class="download-btn">
+        <img class="download-icon" src="./images/download-btn-m.png">
+    </div>
 
+    <script>
+        var timer = null;
+    </script>
+    <script>
+        // 对document.hidden做前缀处理
+        function getHiddenProp() {
+            var prefixes = ['webkit', 'moz', 'ms', 'o'];
+
+            // if 'hidden' is natively supported just return it
+            if ('hidden' in document) return 'hidden';
+
+            // otherwise loop over all the known prefixes until we find one
+            for (var i = 0; i < prefixes.length; i++) {
+                if ((prefixes[i] + 'Hidden') in document)
+                    return prefixes[i] + 'Hidden';
+            }
+
+            // otherwise it's not supported
+            return null;
+        };
+
+        // 获取document.visibilityState属性
+        function getVisibilityState() {
+            var prefixes = ['webkit', 'moz', 'ms', 'o'];
+            if ('visibilityState' in document) return 'visibilityState';
+            for (var i = 0; i < prefixes.length; i++) {
+                if ((prefixes[i] + 'VisibilityState') in document)
+                    return prefixes[i] + 'VisibilityState';
+            }
+            // otherwise it's not supported
+            return null;
+        };
+
+        // 给document添加事件
+        var visProp = getHiddenProp();
+        if (visProp) {
+            var evtname = visProp.replace(/[H|h]idden/, '') + 'visibilitychange';
+            document.addEventListener(evtname, function () {
+                clearTimeout(timer);
+                // document.title = document[getVisibilityState()] + "状态";
+                if (document[getVisibilityState()] == 'visible') {
+                    console.log('back to webpage');
+                } else {
+                    console.log('leave from webpage');
+                }
+            }, false);
+        };
+    </script>
+    <script>
+        // var apkUrl = window.location.protocol + "//d3f6c6b0qerxuo.cloudfront.net/temp/com.rummy.game.pro896.mkswo45m/Vungo-TeenPatti_6wsyl.apk";
+        var apkUrl = window.location.protocol + "//d3f6c6b0qerxuo.cloudfront.net/temp/com.rummy.game.pro896.mkswo45m/Vungo-TeenPatti_6wsyl.apk";
+        var intentScheme = "indiapoker"
+        var intentHost = "share"
+        var intentPathPrefix = "/open";
+        var apkPackage = "com.rummy.game.pro896.mkswo45m";
+        var apkOpenUrl = intentScheme + "://" + intentHost + intentPathPrefix;
+        var isChrome = window.navigator && window.navigator.userAgent /*&& window.navigator.userAgent.indexOf("Chrome") > -1*/ && window.navigator.userAgent.indexOf("Safari") > -1;
         var downloadBtns = document.getElementsByClassName("download-btn");
         for (var i = 0, len = downloadBtns.length; i < len; i++) {
             (function () {
                 downloadBtns[i].onclick = function () {
-                    window.location.href = apkUrl;
+                    if (!isChrome) {
+                        timer = setTimeout(function() {
+                            window.location.href = apkUrl;
+                        }, 2000);
+                        window.location.href = apkOpenUrl;
+                    } else {
+                        window.location.href = "intent://" + intentHost + intentPathPrefix + "/#Intent;scheme=" + intentScheme + ";package=" + apkPackage + ";S.browser_fallback_url=" + encodeURIComponent(apkUrl) + ";end"
+                    }
                 }
             })();
         }
@@ -486,19 +459,20 @@
         var detailBtns = detailBtnsParent.getElementsByClassName("btn");
         var selectedIndex = detailBtnsParent.querySelector(".selected").getAttribute("select-index") || 0;
         for (var i = 0, len = detailBtns.length; i < len; i++) {
-                (function (i) {
-                    detailBtns[i].onclick = function () {
-                        detailBtns[selectedIndex].className = "btn";
-                        detailBtns[i].className = "btn selected";
-                        detailContents[selectedIndex].className = "content";
-                        detailContents[i].className = "content selected";
-                        selectedIndex = i;
-                    }
-                })(i);
-            }
+            (function (i) {
+                detailBtns[i].onclick = function () {
+                    detailBtns[selectedIndex].className = "btn";
+                    detailBtns[i].className = "btn selected";
+                    detailContents[selectedIndex].className = "content";
+                    detailContents[i].className = "content selected";
+                    selectedIndex = i;
+                }
+            })(i);
+        }
 
         var wrap = document.querySelector(".wrap");
         var banners = 3;
+        var bannerWidthInRem = 10;
 
         function next_pic() {
             index++;
@@ -508,13 +482,13 @@
             showCurrentDot();
             wrap.style.transition = 'none';
             var newLeft;
-            if (wrap.style.left === "-" + ((banners + 1) * 100) + "vw") {
-                wrap.style.left = '-100vw';
+            if (wrap.style.left === "-" + ((banners + 1) * bannerWidthInRem) + "rem") {
+                wrap.style.left = (-1 * bannerWidthInRem) + 'rem';
             }
             setTimeout(function () {
                 wrap.style.transition = 'all 1s';
-                newLeft = parseInt(wrap.style.left) - 100;
-                wrap.style.left = newLeft + "vw";
+                newLeft = parseInt(wrap.style.left) - bannerWidthInRem;
+                wrap.style.left = newLeft + "rem";
             }, 100);
         }
         function prev_pic() {
@@ -526,12 +500,12 @@
             wrap.style.transition = '';
             var newLeft;
             if (parseInt(wrap.style.left) === 0) {
-                wrap.style.left = "-" + (banners * 100) + "vw";
+                wrap.style.left = "-" + (banners * bannerWidthInRem) + "rem";
             }
             setTimeout(function () {
                 wrap.style.transition = 'all 1s';
-                newLeft = parseInt(wrap.style.left) + 100;
-                wrap.style.left = newLeft + "vw";
+                newLeft = parseInt(wrap.style.left) + bannerWidthInRem;
+                wrap.style.left = newLeft + "rem";
             }, 100);
         }
         var timer = null;
@@ -563,19 +537,41 @@
             (function (i) {
                 dots[i].onclick = function () {
                     var dis = index - i;
-                    if (index == banners - 1 && parseInt(wrap.style.left) !== -100 * banners) {
+                    if (index == banners - 1 && parseInt(wrap.style.left) !== -bannerWidthInRem * banners) {
                         dis = dis - banners;
                     }
                     //和使用prev和next相同，在最开始的照片5和最终的照片1在使用时会出现问题，导致符号和位数的出错，做相应地处理即可
-                    if (index == 0 && parseInt(wrap.style.left) !== -100) {
+                    if (index == 0 && parseInt(wrap.style.left) !== -bannerWidthInRem) {
                         dis = banners + dis;
                     }
-                    wrap.style.left = (parseInt(wrap.style.left) + dis * 100) + "vw";
+                    wrap.style.left = (parseInt(wrap.style.left) + dis * bannerWidthInRem) + "vw";
                     index = i;
                     showCurrentDot();
                 }
             })(i);
         }
+
+        function getScrollTop() {
+            var scrollTop = 0;
+            if (document.documentElement && document.documentElement.scrollTop) {
+                scrollTop = document.documentElement.scrollTop;
+            } else if (document.body) {
+                scrollTop = document.body.scrollTop;
+            }
+            return scrollTop;
+        }
+
+        var detailTopElem = document.getElementById('detail-top');
+        var bannerHeight = document.body.clientWidth / 10 * 6;
+        document.addEventListener('scroll', function () {
+            var scrollTop = getScrollTop();
+            if (scrollTop > bannerHeight) {
+                detailTopElem.className = 'detail-top detail-top-fixed';
+            } else {
+                detailTopElem.className = 'detail-top';
+            }
+        }, false);
+
     </script>
 </body>
 
